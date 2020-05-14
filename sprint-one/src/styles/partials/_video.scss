@@ -1,0 +1,35 @@
+//Video for Mobile
+
+.video {
+  //Using background-color as a placeholder for mobile for now.
+  background-color: $black;
+  margin-top: 20px;
+  &__hero {
+    height: 183px;
+    width: 100%;
+  }
+}
+
+//Video for Tablet
+
+@include tablet {
+  .video {
+    background-color: $black;
+    &__hero {
+      height: 400px;
+      width: 700px;
+    }
+  }
+}
+
+//Video for Desktop
+
+@include desktop {
+  .video {
+    background-color: $black;
+    &__hero {
+      height: 540px;
+      width: 944px;
+    }
+  }
+}

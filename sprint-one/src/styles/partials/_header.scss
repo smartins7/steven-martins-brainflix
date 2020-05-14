@@ -1,0 +1,118 @@
+//Header for Mobile
+
+.nav-bar {
+  height: 169px;
+  // padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    padding: 0 5rem;
+    margin-top: 0.813rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__search {
+    //figure out how to move the icon over a bit
+    // background-image: url(/sprint-one/public/Icons/SVG/Icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    font-weight: bold;
+    border: 0.063rem solid $silver;
+    height: 2.5rem;
+    padding: 0.625rem 0;
+    padding-left: 25px;
+    margin-left: 0.625rem;
+    max-width: 250px;
+    //include typography here when you fix the path
+  }
+
+  &__lower-row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+  }
+
+  &__button {
+    @include button(195px);
+    // max-width: 250px;
+    margin-left: 0.625rem;
+    //include typography here when you fix the path
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $brainflix-blue-dark;
+    }
+  }
+
+  &__profile {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 15px;
+  }
+}
+
+//Header for Tablet
+
+@include tablet {
+  .nav-bar {
+    &__tablet {
+      display: flex;
+      flex-direction: row;
+      padding: 40px 24px;
+    }
+
+    &__logo {
+      padding-right: 125px;
+    }
+
+    &__features {
+      display: flex;
+      flex-direction: row;
+      margin-right: 50px;
+    }
+
+    &__search {
+      width: 200px;
+      margin-top: 12px;
+      //include typography here when you fix the path
+    }
+
+    &__button {
+      width: 100px;
+      //include typography here when you fix the path
+    }
+  }
+}
+
+//Header for Desktop
+
+@include desktop {
+  .nav-bar {
+    // &__tablet {
+    //   display: flex;
+    //   flex-direction: row;
+    //   padding: 40px 24px;
+    // }
+
+    &__logo {
+      padding-right: 600px;
+    }
+
+    &__features {
+      margin-right: 50px;
+    }
+  }
+}

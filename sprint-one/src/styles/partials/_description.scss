@@ -1,0 +1,105 @@
+//Description for Mobile
+
+.description {
+  padding: 0 1rem;
+  &__title {
+    @include header(1.5rem, 2rem);
+    color: $black;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__author {
+    //include typography here when you fix the path
+    color: $black;
+  }
+
+  &__date {
+    //include typography here when you fix the path
+    color: $silver;
+    padding-left: 10px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__views {
+    //include typography here when you fix the path
+    color: $black;
+  }
+
+  &__likes {
+    //include typography here when you fix the path
+    color: $black;
+    padding-left: 10px;
+  }
+
+  &__content {
+    //include typography here when you fix the path
+    max-width: 400px;
+    border-top: 0.063rem solid $mercury;
+    padding-top: 20px;
+  }
+}
+
+//Description for Tablet
+
+@include tablet {
+  .description {
+    padding: 0 1.5rem;
+    &__title {
+      //include typography here when you fix the path
+    }
+
+    &__details {
+      //include typography here when you fix the path. Maybe don't need it here
+    }
+
+    &__tablet {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__author {
+      //include typography here when you fix the path
+    }
+
+    &__date {
+      //include typography here when you fix the path
+      padding-left: 10px;
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      padding-left: 100px;
+    }
+
+    &__views {
+      //include typography here when you fix the path
+      color: $black;
+    }
+
+    &__likes {
+      //include typography here when you fix the path
+      color: $black;
+      // padding-left: 10px;
+    }
+
+    &__content {
+      //include typography here when you fix the path
+      max-width: 768px;
+    }
+  }
+}
+
+//Description for Desktop
+
+@include desktop {
+  //Figure out the sidebar first
+}

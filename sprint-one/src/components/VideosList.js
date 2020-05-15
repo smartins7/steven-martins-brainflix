@@ -1,54 +1,62 @@
 import React from "react";
 
-import imageOne from "../assets/Images/video-list-1.jpg";
-import imageTwo from "../assets/Images/video-list-2.jpg";
-import imageThree from "../assets/Images/video-list-3.jpg";
-import imageFour from "../assets/Images/video-list-4.jpg";
-import imageFive from "../assets/Images/video-list-5.jpg";
-import imageSix from "../assets/Images/video-list-6.jpg";
-import imageSeven from "../assets/Images/video-list-7.jpg";
-import imageEight from "../assets/Images/video-list-8.jpg";
+// import imageOne from "../assets/Images/video-list-1.jpg";
+// import imageTwo from "../assets/Images/video-list-2.jpg";
+// import imageThree from "../assets/Images/video-list-3.jpg";
+// import imageFour from "../assets/Images/video-list-4.jpg";
+// import imageFive from "../assets/Images/video-list-5.jpg";
+// import imageSix from "../assets/Images/video-list-6.jpg";
+// import imageSeven from "../assets/Images/video-list-7.jpg";
+// import imageEight from "../assets/Images/video-list-8.jpg";
 
 const videos = [
   {
-    img: { imageOne },
-    title: "Become A Travel Pro In One Easy Lesson...",
-    name: "Scotty Cranmer",
+    id: uuid(),
+    title: "Become A Travel Pro In One Easy Lesson",
+    channel: "Scotty Cranmer",
+    image: "../assets/Images/video-list-1.jpg",
   },
   {
-    img: { imageTwo },
-    title: "Les Houches The Hidden Gem Of The...",
-    name: "Scotty Cranmer",
+    id: uuid(),
+    title: "Les Houches The Hidden Gem Of The Chamonix",
+    channel: "Scotty Cranmer",
+    image: "../assets/Images/video-list-2.jpg",
   },
   {
-    img: { imageThree },
-    title: "Travel Health Useful Medical Information...",
-    name: "Scotty Cranmer",
+    id: uuid(),
+    title: "Travel Health Useful Medical Information For",
+    channel: "Scotty Cranmer",
+    image: "../assets/Images/video-list-3.jpg",
   },
   {
-    img: { imageFour },
+    id: uuid(),
     title: "Cheap Airline Tickets Great Ways To Save",
-    name: "Emily Harper",
+    channel: "Emily Harper",
+    image: "../assets/Images/video-list-4.jpg",
   },
   {
-    img: { imageFive },
+    id: uuid(),
     title: "Take A Romantic Break In A Boutique Hotel",
-    name: "Ethan Owen",
+    channel: "Ethan Owen",
+    image: "../assets/Images/video-list-5.jpg",
   },
   {
-    img: { imageSix },
+    id: uuid(),
     title: "Choose The Perfect Accommodations",
-    name: "Lydia Perez",
+    channel: "Lydia Perez",
+    image: "../assets/Images/video-list-6.jpg",
   },
   {
-    img: { imageSeven },
+    id: uuid(),
     title: "Cruising Destination Ideas",
-    name: "Timothy Austin",
+    channel: "Timothy Austin",
+    image: "../assets/Images/video-list-7.jpg",
   },
   {
-    img: { imageEight },
+    id: uuid(),
     title: "Train Travel On Track For Safety",
-    name: "Scotty Cranmer",
+    channel: "Scotty Cranmer",
+    image: "../assets/Images/video-list-8.jpg",
   },
 ];
 
@@ -74,3 +82,35 @@ function VideosList(props) {
 }
 
 export default App;
+
+// import React from "react";
+
+// export default function VideoList({ sideVideo }) {
+//   const videoList = sideVideo.map((video) => {
+//     return (
+//       <div className="video-list-container__video-elements">
+//         <img
+//           className="video-list-container__video-elements--img"
+//           src={video.image}
+//           alt="Video Thumbnail Image"
+//         />
+//         <div className="video-list-container__video-elements--info">
+//           <h2 className="video-list-container__video-elements--info-title">
+//             {video.title}
+//           </h2>
+//           <h4 className="video-list-container__video-elements--info-channel">
+//             {video.channel}
+//           </h4>
+//         </div>
+//       </div>
+//     );
+//   });
+//   return (
+//     <section className="video-list">
+//       <div className="video-list__container">
+//         <h1 className="video-list__container-title">NEXT VIDEO</h1>
+//         {videoList}
+//       </div>
+//     </section>
+//   );
+// }

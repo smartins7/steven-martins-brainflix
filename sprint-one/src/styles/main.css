@@ -73,8 +73,9 @@ a {
 }
 
 .nav-bar__search {
+  background-image: url(../assets/Icons/SVG/Icon-search.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 2%;
   width: 100%;
   font-weight: bold;
   border: 0.063rem solid #afafaf;

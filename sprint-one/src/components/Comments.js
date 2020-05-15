@@ -1,5 +1,4 @@
 import React from "react";
-
 import profile from "./assets/Icons/PNG/userico.png";
 
 return (

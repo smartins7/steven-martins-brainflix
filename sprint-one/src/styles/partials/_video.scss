@@ -1,23 +1,101 @@
 //Video for Mobile
 
-.video {
-  //Using background-color as a placeholder for mobile for now.
+.video-player {
   background-color: $black;
-  margin-top: 20px;
-  &__hero {
-    height: 183px;
+  position: relative;
+  margin: 0 auto;
+  &__video {
+    max-width: 100%;
+  }
+  &__controls {
+    position: absolute;
+    z-index: 99;
+    bottom: 0.375rem;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  &__btn {
+    padding: 0.625rem;
+    margin: 0 0.187rem;
+    border-radius: 0.187rem;
+    color: white;
+    background: rgba(black, 0.6);
+    border: unset;
+    box-shadow: unset;
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      background: rgba(black, 1);
+      outline: 0;
+    }
+  }
+  &__btn-group {
+    display: flex;
+  }
+  &__progress-bar {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 0.187rem;
+    padding: 0.625rem;
+    border-radius: 0.187rem;
+    color: white;
+    background: rgba(black, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__progress-timeline {
+    height: 0.187rem;
+    margin-right: 0.625rem;
+    background: grey;
+    flex-grow: 1;
+  }
+  &__progress-scrubber {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    left: 0.624rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__progress-text {
+    text-align: center;
+    display: none;
   }
 }
 
-//Video for Tablet
+// //Video for Tablet
 
 @include tablet {
-  .video {
-    background-color: $black;
-    &__hero {
+  .video-player {
+    &__video {
+      // margin-left: 35px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
       height: 400px;
       width: 700px;
+      // display: flex;
+      // justify-content: center;
+      // align-self: center;
+    }
+
+    &__controls {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 0 2.5rem;
+      // max-width: 770px;
+    }
+    &__progress-text {
+      display: flex;
     }
   }
 }
@@ -25,11 +103,15 @@
 //Video for Desktop
 
 @include desktop {
-  .video {
-    background-color: $black;
-    &__hero {
+  .video-player {
+    &__video {
       height: 540px;
       width: 944px;
+    }
+
+    &__controls {
+      padding: 0 17rem;
+      // max-width: 1500px;
     }
   }
 }

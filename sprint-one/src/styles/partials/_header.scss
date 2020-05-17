@@ -1,7 +1,6 @@
 //Header for Mobile
 
 .nav-bar {
-  // height: 169px;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -44,7 +43,7 @@
     @include button(250px);
     // max-width: 250px;
     // margin-left: 0.625rem;
-    @include paragraph(0.9rem, 1.563rem);
+    @include subheader(0.8rem, 1.563rem);
 
     &:hover,
     &:focus {
@@ -67,7 +66,7 @@
 
 @include tablet {
   .nav-bar {
-    padding: 20px 24px;
+    padding: 20px 24px 10px;
     &__tablet {
       display: flex;
       flex-direction: row;
@@ -100,7 +99,7 @@
 
 @include desktop {
   .nav-bar {
-    padding: 20px 180px;
+    padding: 20px 180px 10px;
 
     &__logo {
       margin-right: 550px;

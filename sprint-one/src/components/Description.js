@@ -58,7 +58,7 @@ export default function Description({ mainVideo }) {
           <div className="description__icons">
             <h4 className="description__views">
               <img
-                className="description__views-icon"
+                className="description__icon-views"
                 src={viewsIcon}
                 alt="Views Counter"
               />
@@ -66,7 +66,7 @@ export default function Description({ mainVideo }) {
             </h4>
             <h4 className="description__likes">
               <img
-                className="description__views-icon"
+                className="description__icon-likes"
                 src={likesIcon}
                 alt="Likes Counter"
               />

@@ -32,7 +32,7 @@ export default function Header() {
             <img
               className="nav-bar__profile"
               src={profile}
-              alt="User Profile Picture"
+              alt="User Profile"
             />
           </div>
         </nav>

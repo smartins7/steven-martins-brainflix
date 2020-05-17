@@ -13,36 +13,53 @@
   }
 
   &__author {
-    //include typography here when you fix the path
+    @include header(0.938rem, 1.563rem);
     color: $black;
+    margin-top: 7px;
   }
 
   &__date {
-    //include typography here when you fix the path
+    @include paragraph(0.875rem, 1.563rem);
     color: $silver;
-    padding-left: 10px;
+    padding: 1px 0 0 10px;
+    margin-top: 7px;
   }
 
   &__icons {
     display: flex;
     flex-direction: row;
+    padding-bottom: 5px;
   }
 
   &__views {
-    //include typography here when you fix the path
+    @include paragraph(0.875rem, 1.563rem);
     color: $black;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  &__icon-views {
+    padding-right: 5px;
   }
 
   &__likes {
-    //include typography here when you fix the path
+    @include paragraph(0.875rem, 1.563rem);
     color: $black;
-    padding-left: 10px;
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+
+  &__icon-likes {
+    padding-right: 7px;
+  }
+
+  &__tablet {
+    border-bottom: 0.063rem solid $mercury;
   }
 
   &__content {
-    //include typography here when you fix the path
+    @include paragraph(0.75rem, 1.125rem);
     max-width: 400px;
-    border-top: 0.063rem solid $mercury;
     padding-top: 20px;
   }
 }
@@ -51,9 +68,9 @@
 
 @include tablet {
   .description {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     &__title {
-      //include typography here when you fix the path
+      @include header(1.625rem, 2rem);
     }
 
     &__details {
@@ -63,37 +80,42 @@
     &__tablet {
       display: flex;
       flex-direction: row;
+      // border-bottom: 0.063rem solid $mercury;
     }
 
     &__author {
-      //include typography here when you fix the path
+      @include header(1.188rem, 1.563rem);
     }
 
     &__date {
-      //include typography here when you fix the path
-      padding-left: 10px;
+      @include paragraph(1rem, 1.375rem);
+      padding: 1.5px 0 0 10px;
     }
 
     &__icons {
       display: flex;
       flex-direction: row;
-      padding-left: 100px;
+      padding-top: 2px;
+      padding-left: 265px;
     }
 
     &__views {
-      //include typography here when you fix the path
+      @include paragraph(1rem, 1.375rem);
       color: $black;
     }
 
     &__likes {
-      //include typography here when you fix the path
+      @include paragraph(1rem, 1.375rem);
       color: $black;
       // padding-left: 10px;
     }
 
     &__content {
-      //include typography here when you fix the path
+      @include paragraph(0.85rem, 1.125rem);
       max-width: 768px;
+      width: 73%;
+      border-top: 0.063rem solid $white;
+      padding-bottom: 40px;
     }
   }
 }
@@ -102,4 +124,11 @@
 
 @include desktop {
   //Figure out the sidebar first
+  .description {
+    padding: 1rem 0 0 11.25rem;
+
+    &__icons {
+      padding-left: 290px;
+    }
+  }
 }

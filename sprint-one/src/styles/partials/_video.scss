@@ -18,8 +18,7 @@
   }
 
   &__btn {
-    padding: 0.625rem;
-    // margin: 0 0.187rem;
+    padding: 0.625rem 0.75rem;
     border-radius: 0.187rem;
     color: $white;
     background: rgba($black, 0.6);
@@ -41,7 +40,7 @@
   &__progress-bar {
     position: relative;
     flex-grow: 1;
-    margin: 0 0.187rem;
+    margin: 0 0.5rem;
     padding: 0.625rem;
     border-radius: 0.187rem;
     color: white;
@@ -60,8 +59,8 @@
 
   &__progress-scrubber {
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
     background: $white;
     border-radius: 50%;
     left: 0.624rem;
@@ -82,16 +81,12 @@
   .video-player {
     background-color: black;
     &__video {
-      // margin-left: 35px;
       display: flex;
       margin-left: auto;
       margin-right: auto;
       width: 50%;
-      height: 400px;
-      width: 700px;
-      // display: flex;
-      // justify-content: center;
-      // align-self: center;
+      height: 25rem;
+      width: 43.75rem;
     }
 
     &__controls {
@@ -100,7 +95,6 @@
       margin-right: auto;
       width: 100%;
       padding: 0 2.5rem 0.5rem;
-      // max-width: 770px;
     }
 
     &__progress-text {
@@ -114,13 +108,12 @@
 @include desktop {
   .video-player {
     &__video {
-      height: 540px;
-      width: 944px;
+      height: 33.75rem;
+      width: 59rem;
     }
 
     &__controls {
       padding: 0 17rem 0.75rem;
-      // max-width: 1500px;
     }
   }
 }

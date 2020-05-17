@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./styles/main.css";
 import Header from "./components/Header";
 import Video from "./components/Video";
 import Description from "./components/Description";

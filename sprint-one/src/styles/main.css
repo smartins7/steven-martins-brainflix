@@ -63,8 +63,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 46px;
-  width: 175px;
+  height: 2.875rem;
+  width: 10.938rem;
   padding: 0 1rem;
   margin: 0.813rem 0 1rem 3.75rem;
 }
@@ -80,10 +80,11 @@ a {
   width: 100%;
   font-weight: bold;
   border: 0.063rem solid #afafaf;
+  border-radius: 0.25rem;
   height: 2.5rem;
   padding: 0.625rem 0;
-  padding-left: 27px;
-  max-width: 320px;
+  padding-left: 1.688rem;
+  max-width: 20rem;
 }
 
 .nav-bar__lower-row {
@@ -94,7 +95,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .nav-bar__button {
@@ -103,7 +104,7 @@ a {
   height: 45px;
   font-size: 14px;
   border-radius: 4px;
-  width: 250px;
+  width: 15.625rem;
   font-family: Avenir Next Demi Bold;
   font-size: 0.8rem;
   line-height: 1.563rem;
@@ -115,7 +116,7 @@ a {
 }
 
 .nav-bar__button--icon {
-  padding: 5px 0 0 5px;
+  padding: 0.313rem 0 0 0.313rem;
 }
 
 .nav-bar__profile {
@@ -126,7 +127,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .nav-bar {
-    padding: 20px 24px 10px;
+    padding: 1.25rem 1.5rem 0.625rem;
   }
   .nav-bar__tablet {
     display: -webkit-box;
@@ -138,9 +139,9 @@ a {
             flex-direction: row;
   }
   .nav-bar__logo {
-    padding-top: 16px;
+    padding-top: 1rem;
     margin: 0;
-    margin-right: 185px;
+    margin-right: 11.563rem;
   }
   .nav-bar__features {
     display: -webkit-box;
@@ -152,21 +153,21 @@ a {
             flex-direction: row;
   }
   .nav-bar__search {
-    width: 220px;
-    margin-top: 12px;
-    margin-right: 20px;
+    width: 13.75rem;
+    margin-top: 0.75rem;
+    margin-right: 1.25rem;
   }
   .nav-bar__button {
-    width: 125px;
+    width: 7.813rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .nav-bar {
-    padding: 20px 180px 10px;
+    padding: 1.25rem 11.25rem 0.625rem;
   }
   .nav-bar__logo {
-    margin-right: 550px;
+    margin-right: 34.375rem;
   }
 }
 
@@ -194,7 +195,7 @@ a {
 }
 
 .video-player__btn {
-  padding: 0.625rem;
+  padding: 0.625rem 0.75rem;
   border-radius: 0.187rem;
   color: #ffffff;
   background: rgba(50, 50, 50, 0.6);
@@ -220,7 +221,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 0 0.187rem;
+  margin: 0 0.5rem;
   padding: 0.625rem;
   border-radius: 0.187rem;
   color: white;
@@ -247,8 +248,8 @@ a {
 
 .video-player__progress-scrubber {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   background: #ffffff;
   border-radius: 50%;
   left: 0.624rem;
@@ -276,8 +277,8 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 400px;
-    width: 700px;
+    height: 25rem;
+    width: 43.75rem;
   }
   .video-player__controls {
     display: -webkit-box;
@@ -297,8 +298,8 @@ a {
 
 @media only screen and (min-width: 1440px) {
   .video-player__video {
-    height: 540px;
-    width: 944px;
+    height: 33.75rem;
+    width: 59rem;
   }
   .video-player__controls {
     padding: 0 17rem 0.75rem;
@@ -331,7 +332,7 @@ a {
   font-size: 0.938rem;
   line-height: 1.563rem;
   color: #323232;
-  margin-top: 7px;
+  margin-top: 0.438rem;
 }
 
 .description__date {
@@ -339,8 +340,8 @@ a {
   font-size: 0.875rem;
   line-height: 1.563rem;
   color: #afafaf;
-  padding: 1px 0 0 10px;
-  margin-top: 7px;
+  padding: 0.063rem 0 0 0.625rem;
+  margin-top: 0.438rem;
 }
 
 .description__icons {
@@ -351,7 +352,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-bottom: 5px;
+  padding-bottom: 0.313rem;
 }
 
 .description__views {
@@ -360,11 +361,11 @@ a {
   line-height: 1.563rem;
   color: #323232;
   position: relative;
-  margin-top: 5px;
+  margin-top: 0.313rem;
 }
 
 .description__icon-views {
-  padding-right: 5px;
+  padding-right: 0.313rem;
 }
 
 .description__likes {
@@ -372,12 +373,12 @@ a {
   font-size: 0.875rem;
   line-height: 1.563rem;
   color: #323232;
-  padding-left: 15px;
-  margin-top: 5px;
+  padding-left: 0.938rem;
+  margin-top: 0.313rem;
 }
 
 .description__icon-likes {
-  padding-right: 7px;
+  padding-right: 0.438rem;
 }
 
 .description__tablet {
@@ -388,8 +389,8 @@ a {
   font-family: Avenir Next Regular;
   font-size: 0.75rem;
   line-height: 1.125rem;
-  max-width: 400px;
-  padding-top: 20px;
+  max-width: 25rem;
+  padding-top: 1.25rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -419,7 +420,7 @@ a {
     font-family: Avenir Next Regular;
     font-size: 1rem;
     line-height: 1.375rem;
-    padding: 1.5px 0 0 10px;
+    padding: 0.094rem 0 0 0.625rem;
   }
   .description__icons {
     display: -webkit-box;
@@ -429,8 +430,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 2px;
-    padding-left: 265px;
+    padding-top: 0.125rem;
+    padding-left: 16.563rem;
   }
   .description__views {
     font-family: Avenir Next Regular;
@@ -448,10 +449,10 @@ a {
     font-family: Avenir Next Regular;
     font-size: 0.85rem;
     line-height: 1.125rem;
-    max-width: 768px;
+    max-width: 48rem;
     width: 73%;
     border-top: 0.063rem solid #ffffff;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -460,7 +461,7 @@ a {
     padding: 1rem 0 0 11.25rem;
   }
   .description__icons {
-    padding-left: 290px;
+    padding-left: 18.125rem;
   }
 }
 
@@ -485,7 +486,7 @@ a {
 
 .comments-form {
   border-bottom: 0.063rem solid #e1e1e1;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,7 +509,7 @@ a {
 .comments-form__profile {
   height: 2.813rem;
   width: 2.813rem;
-  margin-top: 23px;
+  margin-top: 1.438rem;
 }
 
 .comments-form__input-details {
@@ -519,7 +520,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 .comments-form__input-title {
@@ -533,14 +534,14 @@ a {
   font-family: Avenir Next Regular;
   font-size: 0.8rem;
   line-height: 1.563rem;
-  border: 1.25px solid #afafaf;
-  border-radius: 4px;
+  border: 0.078rem solid #afafaf;
+  border-radius: 0.25rem;
   height: 6rem;
   padding: 0.625rem 0 0 0.625rem;
   font-weight: bold;
   color: #323232;
   background-color: #fafafa;
-  width: 200px;
+  width: 12.5rem;
 }
 
 .comments-form__content:focus {
@@ -556,12 +557,12 @@ a {
   height: 45px;
   font-size: 14px;
   border-radius: 4px;
-  width: 200px;
+  width: 12.5rem;
   font-family: Avenir Next Demi Bold;
   font-size: 0.85rem;
   line-height: 1.563rem;
   margin-left: 4rem;
-  max-width: 240px;
+  max-width: 15rem;
 }
 
 .comments-form__submit:hover, .comments-form__submit:focus {
@@ -572,7 +573,7 @@ a {
 @media only screen and (min-width: 768px) {
   .comments {
     padding: 0 2rem;
-    max-width: 1440px;
+    max-width: 90rem;
   }
   .comments__title {
     font-family: Avenir Next Demi Bold;
@@ -580,8 +581,8 @@ a {
     line-height: 1.563rem;
   }
   .comments__profile {
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
   }
   .comments-form__tablet {
     display: -webkit-box;
@@ -603,8 +604,8 @@ a {
     line-height: 1.563rem;
     border: 0.063rem solid #afafaf;
     height: 2.5rem;
-    width: 445px;
-    padding: 5px 0 5px 0.625rem;
+    width: 27.813rem;
+    padding: 0.313rem 0 0.313rem 0.625rem;
   }
   .comments-form__submit {
     background-color: #0095ff;
@@ -612,14 +613,10 @@ a {
     height: 45px;
     font-size: 14px;
     border-radius: 4px;
-    width: 150px;
+    width: 9.375rem;
     margin-left: 1rem;
-    max-width: 200px;
-    margin-top: 22px;
-  }
-  .comments-form__submit:hover, .comments-form__submit:focus {
-    cursor: pointer;
-    background-color: #0065ad;
+    max-width: 12.5rem;
+    margin-top: 1.375rem;
   }
 }
 
@@ -660,7 +657,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 
 .comments-list__name-wrapper {
@@ -681,15 +678,15 @@ a {
 }
 
 .comments-list__image {
-  width: 45px;
-  height: 45px;
+  width: 2.813rem;
+  height: 2.813rem;
 }
 
 .comments-list__content-wrapper {
   width: 100%;
   margin: 0;
   padding-left: 3.7rem;
-  padding-bottom: 25px;
+  padding-bottom: 1.563rem;
   font-family: Avenir Next Regular;
   font-size: 0.85rem;
   line-height: 1.125rem;
@@ -701,16 +698,16 @@ a {
     padding: 1.5rem 1.5rem 0;
   }
   .comments-list__item {
-    max-width: 600px;
+    max-width: 37.5rem;
   }
   .comments-list__image-wrapper {
-    padding: 5px 0 0 5px;
+    padding: 0.313rem 0 0 0.313rem;
   }
   .comments-list__name-wrapper {
     font-family: Avenir Next Demi Bold;
     font-size: 0.75rem;
     line-height: 0.75rem;
-    padding-top: 5px;
+    padding-top: 0.313rem;
   }
   .comments-list__date-wrapper {
     font-family: Avenir Next Regular;
@@ -738,7 +735,7 @@ a {
 }
 
 .video-list {
-  padding: 5px 1rem 0;
+  padding: 0.313rem 1rem 0;
 }
 
 .video-list__container {
@@ -756,7 +753,7 @@ a {
   font-family: Avenir Next Demi Bold;
   font-size: 0.938rem;
   line-height: 1.563rem;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .video-list__container-video-elements {
@@ -771,8 +768,8 @@ a {
 }
 
 .video-list__container-video-elements--img {
-  width: 130px;
-  height: 80px;
+  width: 8.125rem;
+  height: 5rem;
 }
 
 .video-list__container-video-elements--info {
@@ -796,7 +793,7 @@ a {
   font-family: Avenir Next Regular;
   font-size: 0.75rem;
   line-height: 1rem;
-  padding-top: 8px;
+  padding-top: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -818,21 +815,21 @@ a {
     font-family: Avenir Next Regular;
     font-size: 0.8rem;
     line-height: 1rem;
-    padding-top: 15px;
+    padding-top: 0.938rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .video-list {
-    margin-top: -15px;
-    margin-left: -25px;
+    margin-top: -0.938rem;
+    margin-left: -1.563rem;
   }
   .video-list__container {
     border-left: 0.063rem solid #e1e1e1;
-    padding-left: 30px;
+    padding-left: 1.875rem;
   }
   .video-list__container-title {
-    padding: 35px 0;
+    padding: 2.188rem 0;
   }
   .video-list__container-video-elements {
     padding-bottom: 1.9rem;

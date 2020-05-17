@@ -10,8 +10,8 @@
   &__logo {
     display: flex;
     justify-content: center;
-    height: 46px;
-    width: 175px;
+    height: 2.875rem;
+    width: 10.938rem;
     padding: 0 1rem;
     margin: 0.813rem 0 1rem 3.75rem;
 
@@ -27,22 +27,21 @@
     width: 100%;
     font-weight: bold;
     border: 0.063rem solid $silver;
+    border-radius: 0.25rem;
     height: 2.5rem;
     padding: 0.625rem 0;
-    padding-left: 27px;
-    max-width: 320px;
+    padding-left: 1.688rem;
+    max-width: 20rem;
   }
 
   &__lower-row {
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
+    padding-top: 0.625rem;
   }
 
   &__button {
-    @include button(250px);
-    // max-width: 250px;
-    // margin-left: 0.625rem;
+    @include button(15.625rem);
     @include subheader(0.8rem, 1.563rem);
 
     &:hover,
@@ -51,7 +50,7 @@
       background-color: $brainflix-blue-dark;
     }
     &--icon {
-      padding: 5px 0 0 5px;
+      padding: 0.313rem 0 0 0.313rem;
     }
   }
 
@@ -66,16 +65,16 @@
 
 @include tablet {
   .nav-bar {
-    padding: 20px 24px 10px;
+    padding: 1.25rem 1.5rem 0.625rem;
     &__tablet {
       display: flex;
       flex-direction: row;
     }
 
     &__logo {
-      padding-top: 16px;
+      padding-top: 1rem;
       margin: 0;
-      margin-right: 185px;
+      margin-right: 11.563rem;
     }
 
     &__features {
@@ -84,13 +83,13 @@
     }
 
     &__search {
-      width: 220px;
-      margin-top: 12px;
-      margin-right: 20px;
+      width: 13.75rem;
+      margin-top: 0.75rem;
+      margin-right: 1.25rem;
     }
 
     &__button {
-      width: 125px;
+      width: 7.813rem;
     }
   }
 }
@@ -99,10 +98,10 @@
 
 @include desktop {
   .nav-bar {
-    padding: 20px 180px 10px;
+    padding: 1.25rem 11.25rem 0.625rem;
 
     &__logo {
-      margin-right: 550px;
+      margin-right: 34.375rem;
     }
   }
 }

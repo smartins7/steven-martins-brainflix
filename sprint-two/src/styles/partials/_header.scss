@@ -43,6 +43,8 @@
   &__button {
     @include button(15.625rem);
     @include subheader(0.8rem, 1.563rem);
+    text-align: center;
+    padding: 9px;
 
     &:hover,
     &:focus {

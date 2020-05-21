@@ -1,0 +1,82 @@
+//Uploads for Mobile
+
+.uploads {
+  padding: 0 1rem;
+  //   display: flex;
+  //   flex-direction: column;
+  border-top: 0.063rem solid $mercury;
+
+  &__title {
+    @include header(1.5rem, 2rem);
+    color: $black;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.uploads-form {
+  &__image-title {
+    @include subheader(0.7rem, 1.563rem);
+    color: $silver;
+  }
+  &__thumbnail {
+    border-radius: 0.25rem;
+    width: 288px;
+    height: 153px;
+    margin-bottom: 2rem;
+  }
+  &__input-title--name {
+    @include subheader(0.7rem, 1.563rem);
+    color: $silver;
+  }
+
+  &__name {
+    @include paragraph(0.8rem, 1.563rem);
+    border: 0.078rem solid $silver;
+    border-radius: 0.25rem;
+    height: 2.5rem;
+    width: 100%;
+    background-color: $alabaster;
+    padding: 0.313rem 0 0.313rem 0.625rem;
+  }
+
+  &__input-title--description {
+    @include subheader(0.7rem, 1.563rem);
+    color: $silver;
+  }
+
+  &__content {
+    @include paragraph(0.8rem, 1.563rem);
+    border: 0.078rem solid $silver;
+    border-radius: 0.25rem;
+    height: 6rem;
+    width: 100%;
+    background-color: $alabaster;
+    padding: 0.313rem 0 0.313rem 0.625rem;
+  }
+
+  &__submit {
+    @include button(12.5rem);
+    @include subheader(0.85rem, 1.563rem);
+    width: 100%;
+    border: none;
+    margin-top: 32px;
+  }
+
+  &__cancel {
+    @include button(12.5rem);
+    @include subheader(0.85rem, 1.563rem);
+    width: 100%;
+    background-color: $white;
+    color: $brainflix-blue;
+    border: none;
+    margin-top: 10px;
+  }
+}
+
+//Uploads for Tablet
+
+//Uploads for Desktop

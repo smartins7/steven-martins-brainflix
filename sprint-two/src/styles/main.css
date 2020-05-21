@@ -108,6 +108,8 @@ a {
   font-family: Avenir Next Demi Bold;
   font-size: 0.8rem;
   line-height: 1.563rem;
+  text-align: center;
+  padding: 9px;
 }
 
 .nav-bar__button:hover, .nav-bar__button:focus {
@@ -852,5 +854,111 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.uploads {
+  padding: 0 1rem;
+  border-top: 0.063rem solid #e1e1e1;
+}
+
+.uploads__title {
+  font-family: Avenir Next Bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #323232;
+}
+
+.uploads__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.uploads-form__image-title {
+  font-family: Avenir Next Demi Bold;
+  font-size: 0.7rem;
+  line-height: 1.563rem;
+  color: #afafaf;
+}
+
+.uploads-form__thumbnail {
+  border-radius: 0.25rem;
+  width: 288px;
+  height: 153px;
+  margin-bottom: 2rem;
+}
+
+.uploads-form__input-title--name {
+  font-family: Avenir Next Demi Bold;
+  font-size: 0.7rem;
+  line-height: 1.563rem;
+  color: #afafaf;
+}
+
+.uploads-form__name {
+  font-family: Avenir Next Regular;
+  font-size: 0.8rem;
+  line-height: 1.563rem;
+  border: 0.078rem solid #afafaf;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 0.313rem 0 0.313rem 0.625rem;
+}
+
+.uploads-form__input-title--description {
+  font-family: Avenir Next Demi Bold;
+  font-size: 0.7rem;
+  line-height: 1.563rem;
+  color: #afafaf;
+}
+
+.uploads-form__content {
+  font-family: Avenir Next Regular;
+  font-size: 0.8rem;
+  line-height: 1.563rem;
+  border: 0.078rem solid #afafaf;
+  border-radius: 0.25rem;
+  height: 6rem;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 0.313rem 0 0.313rem 0.625rem;
+}
+
+.uploads-form__submit {
+  background-color: #0095ff;
+  color: #ffffff;
+  height: 45px;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 12.5rem;
+  font-family: Avenir Next Demi Bold;
+  font-size: 0.85rem;
+  line-height: 1.563rem;
+  width: 100%;
+  border: none;
+  margin-top: 32px;
+}
+
+.uploads-form__cancel {
+  background-color: #0095ff;
+  color: #ffffff;
+  height: 45px;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 12.5rem;
+  font-family: Avenir Next Demi Bold;
+  font-size: 0.85rem;
+  line-height: 1.563rem;
+  width: 100%;
+  background-color: #ffffff;
+  color: #0095ff;
+  border: none;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */

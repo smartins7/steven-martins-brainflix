@@ -8,6 +8,7 @@ import VideoList from "./components/VideosList";
 import Uploads from "./components/Uploads";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import uuid from "uuid/v1";
+// import axios from "axios";
 import imageZero from "./assets/Images/video-list-0.jpg";
 import imageOne from "./assets/Images/video-list-1.jpg";
 import imageTwo from "./assets/Images/video-list-2.jpg";
@@ -111,26 +112,56 @@ export default class App extends Component {
     },
   };
 
-  componentDidMount() {
-    console.log("componentDidMount");
-    //to do: add axios get request to fetch the side videos and main video.
-    //Start with one at a time
-    //https://project-2-api.herokuapp.com/videos?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89
-    //update state with data retrieve from axios inside the .then()
-    //import(at the top) and install axios
-    //then wrap sidevideos with link component to sidevideo id
-  }
+  //axios calls
+
+  //Set URL and key in a variable?
+  // componentDidMount() {
+  //   axios
+  //     .get(
+  //       "https://project-2-api.herokuapp.com/videos?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89"
+  //     )
+  //     .then((response) => {
+  //       state = {
+  //         mainVideoDetails: {},
+  //       };
+  //       this.setState({
+  //         mainVideoDetails: response.data,
+  //       })
+  //         .catch((err) => console.log(err));
+  //     };
+  // }
+
+  // componentDidMount() {
+  // axios
+  //     .get(
+  //       "https://project-2-api.herokuapp.com/videos?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89"
+  //     )
+  //     .then((response) => {
+  //       state = {
+  //         sideVideoDetails: {},
+  //       };
+  //       this.setState({
+  //         sideVideoDetails: response.data,
+  //       })
+  //         .catch((err) => console.log(err));
+  //     };
+  //}
+
+  //where do I array.map?
+  //update state with data retrieve from axios inside the .then()?
+  //wrap side videos with link component to side video id?
+  //wrap main video content with link component to main video id?
 
   render() {
-    // Try creating two additional routes, one for main video page (Video.js)
-    //Try to create a new component like VideoPage and put all the stuff in the route inside that component and might have to use render props
+    // Tried creating two additional routes, one for main video page (Video.js). Need api first?
+    //Maybe try to create a new component like VideoPage and put all the stuff in the route inside that component? might have to use render props?
     return (
       <Router>
         <Header />
         <Switch>
+          {/* <Uploads /> */}
           <Route path="/upload" exact component={Uploads} />
           <Route path="/" exact>
-            {console.log(this.props)}
             <Video mainVideo={this.state.mainVideo} />
             <section className="wrapper-one">
               <section className="wrapper-two">

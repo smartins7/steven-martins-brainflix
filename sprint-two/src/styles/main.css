@@ -565,6 +565,7 @@ a {
   line-height: 1.563rem;
   margin-left: 4rem;
   max-width: 15rem;
+  border: none;
 }
 
 .comments-form__submit:hover, .comments-form__submit:focus {

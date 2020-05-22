@@ -63,6 +63,7 @@
     @include subheader(0.85rem, 1.563rem);
     margin-left: 4rem;
     max-width: 15rem;
+    border: none;
 
     &:hover,
     &:focus {

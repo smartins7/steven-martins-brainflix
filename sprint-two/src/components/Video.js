@@ -6,6 +6,9 @@ import fullscreenIcon from "../assets/Icons/SVG/Icon-fullscreen.svg";
 import volumeIcon from "../assets/Icons/SVG/Icon-volume.svg";
 
 export default function Video({ mainVideo }) {
+  if (mainVideo.id === undefined) {
+    return <p>Loading...</p>;
+  }
   return (
     <div className="video-player">
       <div className="video-player__controls">
@@ -45,7 +48,7 @@ export default function Video({ mainVideo }) {
       <video
         poster={mainVideo.image}
         className="video-player__video"
-        src={mainVideo.video}
+        src={`${mainVideo.video}?api_key=steven`}
       ></video>
     </div>
   );

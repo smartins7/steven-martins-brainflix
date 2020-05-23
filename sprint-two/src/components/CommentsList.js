@@ -2,6 +2,9 @@ import React from "react";
 import profileGrey from "../assets/Icons/PNG/grey.png";
 
 export default function CommentsList({ mainVideo }) {
+  if (mainVideo.comments === undefined) {
+    return <p>Loading...</p>;
+  }
   const commentsList = mainVideo.comments.map((comment) => {
     return (
       <ul id="comments-list" className="comments-list" key={comment.id}>

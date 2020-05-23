@@ -11,7 +11,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/" exact component={App} />
       <Route path="/upload" component={Uploads} />
-      {/* <Route path="/videos/:id" component={App} /> */}
+      <Route path="/videos/:id" component={App} />
     </Switch>
   </Router>,
   document.getElementById("root")

@@ -5,19 +5,17 @@ import Description from "./components/Description";
 import Comments from "./components/Comments";
 import CommentsList from "./components/CommentsList";
 import VideoList from "./components/VideosList";
-
-// import uuid from "uuid/v1";
 import axios from "axios";
 
 export default class App extends Component {
-  //axios calls
+  //Setting data from Api in state
 
   state = {
     mainVideoDetails: {},
     sideVideos: [],
   };
 
-  // Set URL and key in a variable?
+  //Axios calls to get and update data from API
 
   componentDidMount() {
     axios
@@ -46,6 +44,7 @@ export default class App extends Component {
     const oldVideoId = prevProps.match.params.id;
     const newVideoId = this.props.match.params.id;
     if (newVideoId !== oldVideoId) {
+      //Makes sure new video is not the same as a previous one
       axios
         .get(
           `https://project-2-api.herokuapp.com/videos/${newVideoId}?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89`
@@ -63,16 +62,15 @@ export default class App extends Component {
     return (
       <>
         <Header />
-
         <Video mainVideo={this.state.mainVideoDetails} />
         <section className="wrapper-one">
           <section className="wrapper-two">
             <Description mainVideo={this.state.mainVideoDetails} />
-
             <Comments />
             <CommentsList mainVideo={this.state.mainVideoDetails} />
           </section>
           <VideoList
+            //Filter ensures that the current video doesn't show up in next video list
             sideVideo={this.state.sideVideos.filter(
               (video) => video.id !== this.state.mainVideoDetails.id
             )}

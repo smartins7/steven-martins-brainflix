@@ -179,7 +179,13 @@ a {
 }
 
 .video-player__video {
-  max-width: 100%;
+  width: 100%;
+  height: 55%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .video-player__controls {
@@ -281,6 +287,8 @@ a {
     width: 50%;
     height: 25rem;
     width: 43.75rem;
+    max-height: 33.75rem;
+    max-width: 59rem;
   }
   .video-player__controls {
     display: -webkit-box;
@@ -790,6 +798,7 @@ a {
   font-family: Avenir Next Bold;
   font-size: 0.77rem;
   line-height: 1.23rem;
+  color: #323232;
 }
 
 .video-list__container-video-elements--info-channel {
@@ -797,6 +806,7 @@ a {
   font-size: 0.75rem;
   line-height: 1rem;
   padding-top: 0.5rem;
+  color: #323232;
 }
 
 @media only screen and (min-width: 768px) {
@@ -879,6 +889,10 @@ a {
           flex-direction: column;
 }
 
+.uploads-form {
+  max-width: 25rem;
+}
+
 .uploads-form__image-title {
   font-family: Avenir Next Demi Bold;
   font-size: 0.7rem;
@@ -888,8 +902,8 @@ a {
 
 .uploads-form__thumbnail {
   border-radius: 0.25rem;
-  width: 288px;
-  height: 153px;
+  width: 18rem;
+  height: 9.563rem;
   margin-bottom: 2rem;
 }
 
@@ -943,7 +957,7 @@ a {
   line-height: 1.563rem;
   width: 100%;
   border: none;
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .uploads-form__cancel {
@@ -960,6 +974,119 @@ a {
   background-color: #ffffff;
   color: #0095ff;
   border: none;
-  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .uploads {
+    padding: 0 2rem;
+  }
+  .uploads__title {
+    font-family: Avenir Next Bold;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    border-bottom: 0.063rem solid #e1e1e1;
+    padding-bottom: 2rem;
+  }
+  .uploads-form {
+    max-width: 62.5rem;
+    padding-top: 1.875rem;
+  }
+  .uploads-form__image-title {
+    font-family: Avenir Next Demi Bold;
+    font-size: 0.9rem;
+    line-height: 1.563rem;
+  }
+  .uploads-form__thumbnail {
+    width: 21.5rem;
+    height: 11.438rem;
+    margin-bottom: 3.125rem;
+  }
+  .uploads-form__input-title--name {
+    font-family: Avenir Next Demi Bold;
+    font-size: 0.8rem;
+    line-height: 1.563rem;
+  }
+  .uploads-form__input-title--description {
+    font-family: Avenir Next Demi Bold;
+    font-size: 0.8rem;
+    line-height: 1.563rem;
+  }
+  .uploads-form__form {
+    border-bottom: 0.063rem solid #e1e1e1;
+    padding-bottom: 2.188rem;
+  }
+  .uploads-form__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .uploads-form__submit {
+    width: 10rem;
+  }
+  .uploads-form__cancel {
+    width: 10rem;
+    padding-top: 1.875rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .uploads {
+    padding: 0 11.25rem;
+  }
+  .uploads-form {
+    max-width: 93.75rem;
+  }
+  .uploads-form__form {
+    border-bottom: 0.063rem solid #ffffff;
+  }
+  .uploads-form__desktop-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom: 0.063rem solid #e1e1e1;
+  }
+  .uploads-form__thumbnail-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .uploads-form__form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 1.5rem;
+  }
+  .uploads-form__input-title--name {
+    padding-bottom: 0.125rem;
+  }
+  .uploads-form__name {
+    width: 44.375rem;
+  }
+  .uploads-form__input-title--description {
+    padding-bottom: 0.125rem;
+    margin-top: -0.938rem;
+  }
+  .uploads-form__content {
+    width: 44.375rem;
+    height: 5.875rem;
+    margin-top: -1.188rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

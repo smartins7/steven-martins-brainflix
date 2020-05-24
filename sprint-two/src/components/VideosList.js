@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function VideoList({ sideVideo }) {
   const videoList = sideVideo.map((video) => {
+    //Linked videos in Next Video section to main area to display when clicked on
     return (
       <Link key={video.id} to={`/videos/${video.id}`}>
         <div className="video-list__container-video-elements" key={video.id}>

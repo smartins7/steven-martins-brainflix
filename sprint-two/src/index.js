@@ -6,6 +6,8 @@ import "./styles/main.css";
 import Uploads from "./components/Uploads";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+//Setting up my routes
+
 ReactDOM.render(
   <Router>
     <Switch>

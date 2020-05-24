@@ -1,6 +1,7 @@
 import React from "react";
 import viewsIcon from "../assets/Icons/SVG/Icon-views.svg";
 import likesIcon from "../assets/Icons/SVG/Icon-likes.svg";
+import dateConvert from "../components/Date";
 
 export default function Description({ mainVideo }) {
   return (
@@ -10,7 +11,9 @@ export default function Description({ mainVideo }) {
         <div className="description__tablet">
           <div className="description__details">
             <h2 className="description__author">{mainVideo.channel}</h2>
-            <h2 className="description__date">{mainVideo.timestamp}</h2>
+            <h2 className="description__date">
+              {dateConvert(new Date(mainVideo.timestamp))}
+            </h2>
           </div>
           <div className="description__icons">
             <h4 className="description__views">

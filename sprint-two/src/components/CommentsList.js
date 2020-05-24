@@ -1,7 +1,9 @@
 import React from "react";
 import profileGrey from "../assets/Icons/PNG/grey.png";
+import dateConvert from "./Date";
 
 export default function CommentsList({ mainVideo }) {
+  //Added this condition incase video doesn't load right away or axios call was unsuccessful
   if (mainVideo.comments === undefined) {
     return <p>Loading...</p>;
   }
@@ -25,7 +27,9 @@ export default function CommentsList({ mainVideo }) {
           </div>
           <div className="comments-list__date-wrapper">
             <li className="comments-list__item">
-              <h4 className="comments-list__date">{comment.timestamp}</h4>
+              <h4 className="comments-list__date">
+                {dateConvert(new Date(comment.timestamp))}
+              </h4>
             </li>
           </div>
         </div>

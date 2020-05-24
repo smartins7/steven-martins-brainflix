@@ -32,11 +32,13 @@
 
     &--info-title {
       @include header(0.77rem, 1.23rem);
+      color: $black;
     }
 
     &--info-channel {
       @include paragraph(0.75rem, 1rem);
       padding-top: 0.5rem;
+      color: $black;
     }
   }
 }

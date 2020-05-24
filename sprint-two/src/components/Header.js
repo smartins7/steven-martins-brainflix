@@ -9,10 +9,9 @@ export default function Header() {
   return (
     <header className="nav-bar" id="nav-bar">
       <div className="nav-bar__tablet">
+        {/* Links to upload page when "upload" button is clicked and back to home page when logo is clicked. */}
         <Link to="/" className="nav-bar__logo-link">
-          {/* <a className="nav-bar__logo-link" href="index.html"> */}
           <img className="nav-bar__logo" src={logo} alt="Brainflix Logo" />
-          {/* </a> */}
         </Link>
         <nav className="nav-bar__features">
           <input

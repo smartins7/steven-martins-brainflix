@@ -87,6 +87,13 @@ a {
   max-width: 20rem;
 }
 
+.nav-bar__search:focus {
+  border-color: #0095ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
 .nav-bar__lower-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -937,6 +944,13 @@ a {
   padding: 0.313rem 0 0.313rem 0.625rem;
 }
 
+.uploads-form__name:focus {
+  border-color: #0095ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
 .uploads-form__input-title--description {
   font-family: Avenir Next Demi Bold;
   font-size: 0.7rem;
@@ -956,6 +970,13 @@ a {
   padding: 0.313rem 0 0.313rem 0.625rem;
 }
 
+.uploads-form__content:focus {
+  border-color: #0095ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
 .uploads-form__submit {
   background-color: #0095ff;
   color: #ffffff;
@@ -969,6 +990,11 @@ a {
   width: 100%;
   border: none;
   margin-top: 2rem;
+}
+
+.uploads-form__submit:hover, .uploads-form__submit:focus {
+  cursor: pointer;
+  background-color: #0065ad;
 }
 
 .uploads-form__cancel {

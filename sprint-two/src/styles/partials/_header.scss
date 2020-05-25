@@ -32,6 +32,12 @@
     padding: 0.625rem 0;
     padding-left: 1.688rem;
     max-width: 20rem;
+
+    &:focus {
+      border-color: $brainflix-blue;
+      box-shadow: none;
+      outline: 0;
+    }
   }
 
   &__lower-row {

@@ -40,6 +40,12 @@
     width: 100%;
     background-color: $alabaster;
     padding: 0.313rem 0 0.313rem 0.625rem;
+
+    &:focus {
+      border-color: $brainflix-blue;
+      box-shadow: none;
+      outline: 0;
+    }
   }
 
   &__input-title--description {
@@ -55,6 +61,12 @@
     width: 100%;
     background-color: $alabaster;
     padding: 0.313rem 0 0.313rem 0.625rem;
+
+    &:focus {
+      border-color: $brainflix-blue;
+      box-shadow: none;
+      outline: 0;
+    }
   }
 
   &__submit {
@@ -63,6 +75,12 @@
     width: 100%;
     border: none;
     margin-top: 2rem;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $brainflix-blue-dark;
+    }
   }
 
   &__cancel {

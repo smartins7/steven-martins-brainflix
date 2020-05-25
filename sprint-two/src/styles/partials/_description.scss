@@ -2,6 +2,7 @@
 
 .description {
   padding: 0 1rem;
+  max-width: 520px;
   &__title {
     @include header(1.5rem, 2rem);
     color: $black;
@@ -69,6 +70,7 @@
 @include tablet {
   .description {
     padding: 0 2rem;
+    max-width: 768px;
     &__title {
       @include header(1.625rem, 2rem);
     }
@@ -119,6 +121,7 @@
 @include desktop {
   .description {
     padding: 1rem 0 0 11.25rem;
+    max-width: 1460px;
 
     &__icons {
       padding-left: 18.125rem;

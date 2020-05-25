@@ -2,6 +2,7 @@
 
 .comments {
   padding: 0.7rem 1rem 1.5rem;
+  max-width: 520px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -78,7 +79,7 @@
 @include tablet {
   .comments {
     padding: 0 2rem;
-    max-width: 90rem;
+    max-width: 768px;
 
     &__title {
       @include subheader(1.188rem, 1.563rem);
@@ -123,5 +124,6 @@
   .comments {
     padding: 0;
     padding-left: 11.55rem;
+    max-width: 1460px;
   }
 }

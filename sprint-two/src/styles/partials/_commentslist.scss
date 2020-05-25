@@ -6,6 +6,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  max-width: 520px;
 
   &__top-row {
     display: flex;
@@ -52,6 +53,7 @@
 @include tablet {
   .comments-list {
     padding: 1.5rem 1.5rem 0;
+    max-width: 768px;
 
     &__item {
       max-width: 37.5rem;
@@ -82,6 +84,7 @@
     .comments-list {
       padding: 0;
       padding-left: 11.25rem;
+      max-width: 1460px;
 
       &__item {
         padding-top: 1rem;

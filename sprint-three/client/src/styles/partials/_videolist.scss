@@ -1,0 +1,98 @@
+//Video List (Side Videos) for Mobile
+
+.video-list {
+  padding: 0.313rem 1rem 0;
+  max-width: 520px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container-title {
+    color: $silver;
+    @include subheader(0.938rem, 1.563rem);
+    padding-bottom: 1.25rem;
+  }
+
+  &__container-video-elements {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.5rem;
+
+    &--img {
+      width: 8.125rem;
+      height: 5rem;
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.9rem;
+    }
+
+    &--info-title {
+      @include header(0.77rem, 1.23rem);
+      color: $black;
+    }
+
+    &--info-channel {
+      @include paragraph(0.75rem, 1rem);
+      padding-top: 0.5rem;
+      color: $black;
+    }
+  }
+}
+//Video List (Side Videos) for Tablet
+
+@include tablet {
+  .video-list {
+    padding: 1rem 1.5rem 0;
+    max-width: 768px;
+    &__container-title {
+      @include subheader(1rem, 1.563rem);
+    }
+
+    &__container-video-elements {
+      &--info-title {
+        @include header(0.9rem, 1.23rem);
+        width: 60%;
+      }
+
+      &--info-channel {
+        @include paragraph(0.8rem, 1rem);
+        padding-top: 0.938rem;
+      }
+    }
+  }
+}
+//Video List (Side Videos) for Desktop
+
+@include desktop {
+  .video-list {
+    margin-top: -0.938rem;
+    margin-left: -1.563rem;
+    max-width: 1460px;
+    &__container {
+      border-left: 0.063rem solid $mercury;
+      padding-left: 1.875rem;
+    }
+
+    &__container-title {
+      padding: 2.188rem 0;
+    }
+
+    &__container-video-elements {
+      padding-bottom: 1.9rem;
+    }
+  }
+
+  .wrapper-one {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wrapper-two {
+    display: flex;
+    flex-direction: column;
+  }
+}

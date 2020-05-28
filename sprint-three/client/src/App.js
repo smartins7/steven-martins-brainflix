@@ -8,55 +8,96 @@ import VideoList from "./components/VideosList";
 import axios from "axios";
 
 export default class App extends Component {
-  //Setting data from Api in state
+  //Setting data from express in state
 
   state = {
     mainVideoDetails: {},
     sideVideos: [],
   };
 
-  //Axios calls to get and update data from API
-
   componentDidMount() {
+    this.getVideos();
+    this.getVideosList();
+  }
+
+  //This function isn't working but posts in console?
+  getVideos() {
     axios
-      .get(
-        "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89"
-      )
-      .then((response) =>
+      .get("http://localhost:5000/videos/1af0jruup5gu")
+      .then((response) => {
         this.setState({
           mainVideoDetails: response.data,
-        })
-      )
-      .catch((err) => console.log(err));
-    axios
-      .get(
-        "https://project-2-api.herokuapp.com/videos?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89"
-      )
-      .then((response) =>
-        this.setState({
-          sideVideos: response.data,
-        })
-      )
+        });
+      })
       .catch((err) => console.log(err));
   }
 
-  componentDidUpdate(prevProps) {
-    const oldVideoId = prevProps.match.params.id;
-    const newVideoId = this.props.match.params.id;
-    if (newVideoId !== oldVideoId) {
-      //Makes sure new video is not the same as a previous one
-      axios
-        .get(
-          `https://project-2-api.herokuapp.com/videos/${newVideoId}?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89`
-        )
-        .then((response) =>
-          this.setState({
-            mainVideoDetails: response.data,
-          })
-        )
-        .catch((err) => console.log(err));
-    }
+  getVideosList() {
+    axios
+      .get("http://localhost:5000/videos")
+      .then((response) => {
+        console.log(response.data[0]);
+        this.setState({
+          sideVideos: response.data,
+        });
+      })
+      .catch((err) => console.log(err));
   }
+
+  // mainVideoDetails() {
+  //   axios
+  //     .get("http://localhost:5000/videos/1af0jruup5gu")
+  //     .then((response) => {
+  //       this.setState({
+  //         mainVideoDetails: response.data,
+  //       });
+  //     })
+  //     .catch((err) => console.log(err));
+  // }
+
+  // //Axios calls to get and update data from API
+
+  // componentDidMount() {
+  //   axios
+  //     .get(
+  //       "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89"
+  //     )
+  //     .then((response) =>
+  //       this.setState({
+  //         mainVideoDetails: response.data,
+  //       })
+  //     )
+  //     .catch((err) => console.log(err));
+  //   axios
+  //     .get(
+  //       "https://project-2-api.herokuapp.com/videos?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89"
+  //     )
+  //     .then((response) =>
+  //       this.setState({
+  //         sideVideos: response.data,
+  //       })
+  //     )
+  //     .catch((err) => console.log(err));
+  // }
+
+  // componentDidUpdate(prevProps) {
+  //   const oldVideoId = prevProps.match.params.id;
+  //   const newVideoId = this.props.match.params.id;
+  //   if (newVideoId !== oldVideoId) {
+  //     //Makes sure new video is not the same as a previous one
+  //     axios
+  //       .get(
+  //         // `https://project-2-api.herokuapp.com/videos/${newVideoId}?api_key=87406025-19a3-40c6-88d5-0f1aeb285f89`
+  //         "http://localhost:5000/videos"
+  //       )
+  //       .then((response) =>
+  //         this.setState({
+  //           mainVideoDetails: response.data,
+  //         })
+  //       )
+  //       .catch((err) => console.log(err));
+  //   }
+  // }
 
   render() {
     return (

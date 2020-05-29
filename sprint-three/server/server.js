@@ -1,12 +1,9 @@
 const { v4: uuid } = require("uuid");
 const express = require("express");
 const cors = require("cors");
-
 const getVideo = require("./controller/getVideo");
 const getVideoList = require("./controller/getVideoList");
-
 const fs = require("fs");
-
 const app = express();
 
 // // middleware
@@ -39,6 +36,14 @@ app
       timestamp: Date.now(),
       comments: [],
     };
+
+    //This doesn't work
+    // if (!videoData.title || !videoData.description) {
+    //   return res.status(404).json({
+    //     errorMessage: "Please provide title and/or description, for the video",
+    //   });
+    // }
+
     videoData.push(videoObj);
     fs.writeFileSync("./model/videos.json", JSON.stringify(videoData));
 

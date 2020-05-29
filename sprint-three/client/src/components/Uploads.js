@@ -2,7 +2,28 @@ import React from "react";
 import uploadPreview from "../assets/Images/Upload-video-preview.jpg";
 import Header from "../components/Header";
 
+// import axios from "axios";
+
 export default function Uploads() {
+  // const publishClick = (event) => {
+  //   event.preventDefault();
+  //   console.log(event.target.form);
+
+  //   axios
+  //     .post("http://localhost:5000/videos", uploadVideo)
+  //     .then((res) => {
+  //       props.setPlaylist();
+  //       props.history.replace();
+  //     })
+  //    .catch((err) => console.log(err));
+  //     };
+  //   event.target.form.reset();
+  // };
+
+  // const cancelClick = () => {
+  //   props.history.goBack();
+  // };
+
   return (
     //Included header component in here to display at the top of the page.
     //Links are in the header component to get to upload page
@@ -51,9 +72,21 @@ export default function Uploads() {
             </div>
             <div className="uploads-form__buttons">
               <br />
-              <button className="uploads-form__submit">PUBLISH</button>
+              <button
+                className="uploads-form__submit"
+                // form="uploadForm"
+                // type="submit"
+                // onClick={publishClick}
+              >
+                PUBLISH
+              </button>
               <br />
-              <button className="uploads-form__cancel">CANCEL</button>
+              <button
+                className="uploads-form__cancel"
+                // onClick={cancelClick}
+              >
+                CANCEL
+              </button>
             </div>
           </form>
         </div>

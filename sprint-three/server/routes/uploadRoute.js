@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+const fs = require("fs");
+
 //import image like sprint-one?
 // import newVideo from "../../client/src/assets/Images/Upload-video-preview.jpg";
 

@@ -43,7 +43,7 @@
     margin: 0;
     padding-left: 3.7rem;
     padding-bottom: 1.563rem;
-    @include paragraph(0.85rem, 1.125rem);
+    @include paragraph(0.85rem, 18px);
     border-bottom: 0.063rem solid $mercury;
   }
 }

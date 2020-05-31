@@ -85,6 +85,14 @@ a {
   padding: 0.625rem 0;
   padding-left: 1.688rem;
   max-width: 20rem;
+  background-color: #fafafa;
+}
+
+.nav-bar__search:focus {
+  border-color: #0095ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
 
 .nav-bar__lower-row {
@@ -129,6 +137,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .nav-bar {
+    height: 80px;
     padding: 1.25rem 1.5rem 0.625rem;
   }
   .nav-bar__tablet {
@@ -706,7 +715,7 @@ a {
   padding-bottom: 1.563rem;
   font-family: Avenir Next Regular;
   font-size: 0.85rem;
-  line-height: 1.125rem;
+  line-height: 18px;
   border-bottom: 0.063rem solid #e1e1e1;
 }
 
@@ -925,6 +934,16 @@ a {
   color: #afafaf;
 }
 
+.uploads-form__name-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .uploads-form__name {
   font-family: Avenir Next Regular;
   font-size: 0.8rem;
@@ -935,6 +954,14 @@ a {
   width: 100%;
   background-color: #fafafa;
   padding: 0.313rem 0 0.313rem 0.625rem;
+  max-width: 320px;
+}
+
+.uploads-form__name:focus {
+  border-color: #0095ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
 
 .uploads-form__input-title--description {
@@ -954,6 +981,14 @@ a {
   width: 100%;
   background-color: #fafafa;
   padding: 0.313rem 0 0.313rem 0.625rem;
+  max-width: 320px;
+}
+
+.uploads-form__content:focus {
+  border-color: #0095ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
 
 .uploads-form__submit {
@@ -969,6 +1004,12 @@ a {
   width: 100%;
   border: none;
   margin-top: 2rem;
+  max-width: 320px;
+}
+
+.uploads-form__submit:hover, .uploads-form__submit:focus {
+  cursor: pointer;
+  background-color: #0065ad;
 }
 
 .uploads-form__cancel {
@@ -986,6 +1027,7 @@ a {
   color: #0095ff;
   border: none;
   margin-top: 0.625rem;
+  max-width: 320px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1018,10 +1060,16 @@ a {
     font-size: 0.8rem;
     line-height: 1.563rem;
   }
+  .uploads-form__name {
+    max-width: 768px;
+  }
   .uploads-form__input-title--description {
     font-family: Avenir Next Demi Bold;
     font-size: 0.8rem;
     line-height: 1.563rem;
+  }
+  .uploads-form__content {
+    max-width: 768px;
   }
   .uploads-form__form {
     border-bottom: 0.063rem solid #e1e1e1;

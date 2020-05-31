@@ -32,6 +32,11 @@
     color: $silver;
   }
 
+  &__name-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__name {
     @include paragraph(0.8rem, 1.563rem);
     border: 0.078rem solid $silver;
@@ -40,6 +45,13 @@
     width: 100%;
     background-color: $alabaster;
     padding: 0.313rem 0 0.313rem 0.625rem;
+    max-width: 320px;
+
+    &:focus {
+      border-color: $brainflix-blue;
+      box-shadow: none;
+      outline: 0;
+    }
   }
 
   &__input-title--description {
@@ -55,6 +67,13 @@
     width: 100%;
     background-color: $alabaster;
     padding: 0.313rem 0 0.313rem 0.625rem;
+    max-width: 320px;
+
+    &:focus {
+      border-color: $brainflix-blue;
+      box-shadow: none;
+      outline: 0;
+    }
   }
 
   &__submit {
@@ -63,6 +82,13 @@
     width: 100%;
     border: none;
     margin-top: 2rem;
+    max-width: 320px;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $brainflix-blue-dark;
+    }
   }
 
   &__cancel {
@@ -73,6 +99,7 @@
     color: $brainflix-blue;
     border: none;
     margin-top: 0.625rem;
+    max-width: 320px;
   }
 }
 
@@ -102,8 +129,16 @@
       @include subheader(0.8rem, 1.563rem);
     }
 
+    &__name {
+      max-width: 768px;
+    }
+
     &__input-title--description {
       @include subheader(0.8rem, 1.563rem);
+    }
+
+    &__content {
+      max-width: 768px;
     }
 
     &__form {

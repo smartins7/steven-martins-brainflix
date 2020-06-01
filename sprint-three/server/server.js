@@ -30,7 +30,6 @@ app
       description: req.body.description,
       views: "0",
       likes: "0",
-      //this won't post
       duration: "4:43",
       video:
         "https://ia800701.us.archive.org/26/items/SampleVideo1280x7205mb/SampleVideo_1280x720_5mb.mp4",

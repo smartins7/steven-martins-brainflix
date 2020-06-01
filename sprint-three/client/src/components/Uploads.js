@@ -5,26 +5,23 @@ import axios from "axios";
 
 export default function Uploads(props) {
   const publishClick = (event) => {
+    alert("Upload Successful!");
     event.preventDefault();
-    console.log(event.target.form);
+    // event.reset();
     axios
       .post("http://localhost:5000/videos", {
-        // title: "hello",
-        // title: video.title,
+        title: event.target.videoTitle.value,
         channel: "Mohan Muruge",
         image: "https://i.imgur.com/vVp3k9a.jpg",
-        // description: video.description,
+        description: event.target.videoDescription.value,
         views: "0",
         likes: "0",
-        //this won't post
         duration: "4:43",
         video:
           "https://ia800701.us.archive.org/26/items/SampleVideo1280x7205mb/SampleVideo_1280x720_5mb.mp4",
         comments: [],
       })
       .then((res) => {
-        console.log(res);
-        // props.setPlaylist();
         props.history.replace();
       })
       .catch((err) => console.log(err));
@@ -41,7 +38,11 @@ export default function Uploads(props) {
       <div className="uploads">
         <h1 className="uploads__title">Upload Video</h1>
         <div className="uploads-form__container">
-          <form id="uploads-form" className="uploads-form">
+          <form
+            id="uploads-form"
+            className="uploads-form"
+            onSubmit={publishClick}
+          >
             <div className="uploads-form__desktop-wrapper">
               <div className="uploads-form__thumbnail-wrapper">
                 <figcaption className="uploads-form__image-title">
@@ -63,7 +64,7 @@ export default function Uploads(props) {
                     id="uploads-name-input"
                     className="uploads-form__name"
                     placeholder="Add a title to your video"
-                    name="uploadsName"
+                    name="videoTitle"
                   />
                 </div>
                 <br />
@@ -76,18 +77,13 @@ export default function Uploads(props) {
                   id="uploads-content-input"
                   placeholder="Add a description of your video"
                   className="uploads-form__content"
-                  name="uploadsUpload"
+                  name="videoDescription"
                 ></textarea>
               </div>
             </div>
             <div className="uploads-form__buttons">
               <br />
-              <button
-                className="uploads-form__submit"
-                form="uploadForm"
-                type="submit"
-                onClick={publishClick}
-              >
+              <button className="uploads-form__submit" type="submit">
                 PUBLISH
               </button>
               <br />

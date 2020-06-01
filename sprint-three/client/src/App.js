@@ -117,7 +117,6 @@ export default class App extends Component {
     axios
       .get("http://localhost:5000/videos")
       .then((response) => {
-        console.log(response.data[0]);
         this.setState({
           sideVideos: response.data,
         });

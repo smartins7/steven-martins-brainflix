@@ -2,12 +2,12 @@ import React from "react";
 import uploadPreview from "../assets/Images/Upload-video-preview.jpg";
 import Header from "../components/Header";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Uploads(props) {
   const publishClick = (event) => {
     alert("Upload Successful!");
     event.preventDefault();
-    // event.reset();
     axios
       .post("http://localhost:5000/videos", {
         title: event.target.videoTitle.value,
@@ -22,12 +22,9 @@ export default function Uploads(props) {
         comments: [],
       })
       .then((res) => {
-        props.history.replace();
+        props.history.replace("/");
       })
       .catch((err) => console.log(err));
-  };
-  const cancelClick = () => {
-    props.history.goBack();
   };
 
   return (
@@ -87,9 +84,9 @@ export default function Uploads(props) {
                 PUBLISH
               </button>
               <br />
-              <button className="uploads-form__cancel" onClick={cancelClick}>
+              <Link to="/upload" className="uploads-form__cancel">
                 CANCEL
-              </button>
+              </Link>
             </div>
           </form>
         </div>

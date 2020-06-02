@@ -37,13 +37,6 @@ app
       comments: [],
     };
 
-    //This doesn't work
-    // if (!videoData.title || !videoData.description) {
-    //   return res.status(404).json({
-    //     errorMessage: "Please provide title and/or description, for the video",
-    //   });
-    // }
-
     videoData.push(videoObj);
     fs.writeFileSync("./model/videos.json", JSON.stringify(videoData));
 
